@@ -1,6 +1,9 @@
 import React from "react";
 import featImage01 from "../../../assets/FeatureImg.png";
 import featImage02 from "../../../assets/FeatureImg.png";
+import featImage03 from "../../../assets/undraw_stepping_up_g6oo.svg";
+
+import { ReactComponent as SvgDotPattern } from "../../../assets/dot-pattern.svg";
 
 function Zigzag() {
   return (
@@ -60,7 +63,7 @@ function Zigzag() {
               </div>
             </div>
             {/* 2nd item */}
-            <div className="md:grid lg:grid-cols-12 lg:gap-6 items-center">
+            <div className="md:grid lg:grid-cols-12 lg:gap-6 md:place-items-center md:justify-center">
               {/* Content */}
               <div
                 className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 "
@@ -121,10 +124,10 @@ function Zigzag() {
               >
                 <img
                   className="max-w-full mx-auto mt-8 md:max-w-none h-auto"
-                  src={featImage02}
+                  src={featImage03}
                   width={540}
                   height={405}
-                  alt="Features 01"
+                  alt="steps"
                 />
               </div>
             </div>
