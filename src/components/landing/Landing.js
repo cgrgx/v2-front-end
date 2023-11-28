@@ -6,6 +6,7 @@ import HeroSection from "./ui/hero";
 import FeaturesSection from "./ui/features";
 import ZigzagSection from "./ui/zigzag";
 import Footer from "./ui/footer";
+import Faq from "./ui/faq";
 
 // ... import other sections
 
@@ -19,6 +20,7 @@ function Landing() {
         <ZigzagSection />
         {/* <TestimonialsSection /> */}
         {/* Include other sections as needed */}
+        <Faq />
       </Main>
       <Footer />
     </div>

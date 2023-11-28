@@ -103,6 +103,7 @@ function Zigzag() {
                       </svg>
                       <span>Step 2</span>
                     </li>
+
                     <li className="flex items-center">
                       <svg
                         className="w-3 h-3 fill-current text-purple-500 mr-2 shrink-0"
