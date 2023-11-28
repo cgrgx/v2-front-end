@@ -7,6 +7,8 @@ import FeaturesSection from "./ui/features";
 import ZigzagSection from "./ui/zigzag";
 import Footer from "./ui/footer";
 import Faq from "./ui/faq";
+import TestimonialsSection from "./ui/testimonials";
+import Newsletter from "./ui/newsletter";
 
 // ... import other sections
 
@@ -18,9 +20,9 @@ function Landing() {
         <HeroSection />
         <FeaturesSection />
         <ZigzagSection />
-        {/* <TestimonialsSection /> */}
-        {/* Include other sections as needed */}
         <Faq />
+        <TestimonialsSection />
+        <Newsletter />
       </Main>
       <Footer />
     </div>

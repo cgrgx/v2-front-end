@@ -31,16 +31,19 @@ function Features() {
   return (
     <div className="relative">
       <div className="flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center mx-auto py-20 md:py-24 w-full md:w-11/12 ">
-        <div className="w-full flex flex-col items-center justify-center">
-          <h4 className="text-2xl mb-4 font-bold uppercase text-purple-600">
+        <div className="flex flex-col items-center">
+          <h5 className="mb-4 text-center font-bold text-purple-500">
             Features
-          </h4>
-          <div className="w-full flex flex-col  items-center justify-center text-5xl lg:text-6xl md:flex-row gap-5">
-            <h2 className="font-bold text-center">We Have Amazing</h2>
-            <span className="font-bold text-orange-400 text-center ">
-              Service.
+          </h5>
+          <h3 className="w-full text-4xl sm:text-5xl font-gray-800 font-bold tracking-wide text-center">
+            What We
+            <span className="ml-3 font-bold text-orange-400 text-center ">
+              Offers
             </span>
-          </div>
+          </h3>
+          <p className="w-full text-center mt-4 text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100 max-w-xl">
+            Here are some of the features we offer.
+          </p>
         </div>
         <div className="mt-5 w-full"></div>
         {cards.map((card, i) => (
