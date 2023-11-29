@@ -29,8 +29,8 @@ const cards = [
 
 function Features() {
   return (
-    <div className="relative">
-      <div className="flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center mx-auto py-20 md:py-24 w-full md:w-11/12 ">
+    <div className="relative max-w-6xl mx-auto px-4 sm:px-6 ">
+      <div className="flex flex-col items-center md:items-stretch md:flex-row flex-wrap md:justify-center md:py-24 w-full ">
         <div className="flex flex-col items-center">
           <h5 className="mb-4 text-center font-bold text-purple-500">
             Features
@@ -45,16 +45,19 @@ function Features() {
             Here are some of the features we offer.
           </p>
         </div>
-        <div className="mt-5 w-full"></div>
+        <div className="mt-5 w-full "></div>
         {cards.map((card, i) => (
-          <div key={i} className="max-w-lg md:w-1/2 lg:w-1/4 mx-4 mb-8">
-            <div className=" flex flex-col items-center text-center md:text-left h-full px-4 py-6 rounded-lg shadow-lg bg-white md:flex-row md:items-start">
+          <div
+            key={i}
+            className="max-w-3xl md:min-h-96 md:w-1/2 lg:w-auto mx-4 mb-8 "
+          >
+            <div className=" flex flex-col items-center text-center md:text-left h-full px-4 py-6 rounded-lg shadow-lg  md:flex-row md:items-start md:content-center">
               <div className="border rounded-full p-3 flex-shrink-0">
                 <img src={card.imageSrc} alt="" className="w-6 h-6" />
               </div>
               <div className="sm:ml-4 mt-4 sm:mt-0">
-                <h3 className="mt-2 text-xl font-semibold">{card.title}</h3>
-                <p className="mt-2 text-gray-700">{card.description}</p>
+                <h3 className="mt-2 text-2xl font-semibold">{card.title}</h3>
+                <p className="mt-2 text-lg text-gray-700">{card.description}</p>
               </div>
             </div>
           </div>

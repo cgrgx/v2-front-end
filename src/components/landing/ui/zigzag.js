@@ -1,4 +1,6 @@
 import React from "react";
+import { Link } from "react-router-dom";
+
 import featImage01 from "../../../assets/FeatureImg.png";
 import featImage03 from "../../../assets/undraw_stepping_up_g6oo.svg";
 
@@ -60,13 +62,13 @@ function Zigzag() {
           </div>
 
           {/* 2nd item */}
-          <div className="mt-8 flex flex-col md:flex-row-reverse md:mt-12 items-center">
+          <div className="mt-8 flex flex-col md:flex-row-reverse md:mt-20 items-center">
             {/* Content */}
             <div
               className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 "
               data-aos="fade-right"
             >
-              <div className="md:pr-4 lg:pr-12 xl:pr-16">
+              <div className="md:pl-4 lg:pl-12 xl:pl-16">
                 <div className="w-full flex flex-col items-center justify-center text-4xl lg:text-5xl gap-5">
                   <span className="font-bold text-orange-400 text-center ">
                     Easy to
@@ -75,6 +77,7 @@ function Zigzag() {
                     Get Started
                   </div>
                 </div>
+
                 <p className="text-xl m-4">
                   Getting started is as easy as 1-2-3! Simply follow these
                   simple steps to begin your journey with us.
@@ -112,6 +115,12 @@ function Zigzag() {
                     <span>Step 3</span>
                   </li>
                 </ul>
+                <Link
+                  to="/signup"
+                  className="flex items-center justify-center text-xl px-8 py-3 mt-4 w-48 bg-purple-600 text-white font-bold rounded-full shadow-lg transition duration-300 hover:bg-primary-700 hover:text-white focus:shadow-outline transform hover:scale-105"
+                >
+                  Get Started
+                </Link>
               </div>
             </div>
             {/* Image */}
