@@ -48,7 +48,7 @@ function Zigzag() {
                   <span className="font-bold text-orange-400 text-center ">
                     AI-Powered
                   </span>
-                  <div className="font-architects-daughter font-bold text-center text-purple-600 mb-2">
+                  <div className=" font-bold text-center text-purple-600 mb-2">
                     Mentor Matching
                   </div>
                 </div>
@@ -73,7 +73,7 @@ function Zigzag() {
                   <span className="font-bold text-orange-400 text-center ">
                     Easy to
                   </span>
-                  <div className="font-architects-daughter font-bold text-center text-purple-600 mb-2">
+                  <div className="font-bold text-center text-purple-600 mb-2">
                     Get Started
                   </div>
                 </div>
