@@ -6,6 +6,8 @@ import Landing from "./components/landing/Landing";
 import SignUp from "./components/auth/signup";
 import SignIn from "./components/auth/signin";
 import { Welcome } from "./components/app/welcome";
+import { Categories } from "./components/app/categories";
+import { Activities } from "./components/app/activities";
 
 //graphql end point
 const client = new ApolloClient({
@@ -63,12 +65,18 @@ function App() {
             path="/welcome"
             element={
               loadingUserData ? (
-                <p>Loading user data...</p>
+                <p>Loading user data...</p> //spinner here
               ) : (
                 <Welcome userData={userData} />
               )
             }
-          />
+          ></Route>
+          {/*
+           * TODO : will go to welcome route later for auth
+           */}
+          <Route path="/catagories" element={<Categories />} />
+          <Route path="/category/:categoryId" element={<Activities />} />
+          <Route path="*" element={<p>Page Not found</p>} />
         </Routes>
       </ApolloProvider>
     </Router>
