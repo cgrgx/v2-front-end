@@ -8,6 +8,7 @@ import SignIn from "./components/auth/signin";
 import { Welcome } from "./components/app/welcome";
 import { Categories } from "./components/app/categories";
 import { Activities } from "./components/app/activities";
+import ChatApp from "./components/chat/chatapp";
 
 //graphql end point
 const client = new ApolloClient({
@@ -76,6 +77,7 @@ function App() {
            */}
           <Route path="/catagories" element={<Categories />} />
           <Route path="/category/:categoryId" element={<Activities />} />
+          <Route path="/chat" element={<ChatApp />} />
           <Route path="*" element={<p>Page Not found</p>} />
         </Routes>
       </ApolloProvider>
